@@ -1,13 +1,12 @@
-server:
-  port: 8800
-  #/{label}/{application}-{profile}.yml
-   #label: 远程仓库的分支名字。如果我没有指定该参数默认按照master访问，但在访问时，如果分支为master可以省略。
-    #application: 远程仓库文件的名字，也就是上图中的client。
-    #profile: 不同环境的名字。例如:dev(开发环境)、test(测试环境)、pro(生产环境)等。
-spring:
-  application:
-    name: springcloud-config
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://127.0.0.1:8761/eureka
+spring:
+  application:
+    name: springcloud-client
+server:
+  port: 8082
+userinfo:
+  username: ailijuan-2020
+  password: ailijuan2020
